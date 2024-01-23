@@ -9,7 +9,7 @@ module.exports = {
 		.setDescription('Replies with Pong!'),
 	category: 'fun',
 	async execute(interaction) {
-		// await  interaction.reply('Pong!');
+		await  interaction.reply('Pong!');
 
 		// Ephemeral responses
 		// await  interaction.reply({ content: 'Secret Pong!', ephemeral: true });
@@ -20,7 +20,7 @@ module.exports = {
 		// await interaction.editReply('Pong again!');
 
 		//  Deferred responses
-		// // await interaction.deferReply();
+		// await interaction.deferReply();
 		// await interaction.deferReply({ ephemeral: true });
 		// await wait(4000);
 		// await interaction.editReply('Pong!');
@@ -51,7 +51,7 @@ module.exports = {
 		// interaction.reply(locales[interaction.locale] ?? 'Hello World (default is english)');
 
 		// ping
-		interaction.reply(`Websocket heartbeat: ${interaction.client.ws.ping}ms.`);
+		// interaction.reply(`Websocket heartbeat: ${interaction.client.ws.ping}ms.`);
 
 	},
 };
