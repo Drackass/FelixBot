@@ -17,8 +17,10 @@ module.exports = {
 
     const newFlixBtn = new ButtonBuilder()
       .setCustomId("newFlixBtn")
-      .setLabel("🍿New Flix🍿")
-      .setStyle(ButtonStyle.Danger);
+      .setLabel("New Flix")
+      .setStyle(ButtonStyle.Danger)
+      .setEmoji("1199288805597913198")
+      
 
     const viewNewFlixBtn = new ButtonBuilder()
       .setLabel("View All")
@@ -28,7 +30,7 @@ module.exports = {
     const row = new ActionRowBuilder().addComponents(viewNewFlixBtn,newFlixBtn);
 
     const suggestionsPage = new EmbedBuilder()
-      .setImage("./public/Nextflix.png")
+      .setImage("https://github.com/Drackass/Nextflix-Bot/blob/main/public/Nextflix.png?raw=true")
       .setColor(0xe50914)
       .setTitle(":popcorn: Suggestions :popcorn:")
       .setDescription(
